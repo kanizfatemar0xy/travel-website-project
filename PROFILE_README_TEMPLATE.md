@@ -20,4 +20,4 @@ I enjoy turning ideas into practical, documented projects. I'm interested in **d
 
 ---
 
-**To display this on your GitHub profile:** create a **public** repository named exactly \`kanizfatemar0xy\` under your own account and copy the text above into its root \`README.md\` (excluding this instruction).
+**To display this on your GitHub profile:** create a **public** repository named exactly `kanizfatemar0xy` under your own account and copy the text above into its root `README.md` (excluding this instruction).
