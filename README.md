@@ -1,50 +1,24 @@
-# 🌍 Travel Website
+# WanderGallery — Responsive Travel Website
 
-### Frontend Travel Website
+[![Static site checks](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml/badge.svg)](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml)
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222?style=for-the-badge&logo=github&logoColor=white)
+A **responsive frontend portfolio project** created with HTML5 and CSS3 by **Kaniz Fatema Roxy**.
 
----
+**Live (when GitHub Pages is enabled):** https://kanizfatemar0xy.github.io/travel-website-project/
 
-## 🧭 About the Project
+## What the project demonstrates
+- Semantic HTML and accessible navigation, keyboard focus, skip link, descriptive image alternatives
+- Responsive destination cards with mobile breakpoints and reduced-motion support
+- Clear page sections: destinations, about and contact
+- Link/asset validation in Python's standard library and automated GitHub Actions checks
 
-This is a frontend travel website created using **HTML and CSS**.
+## Run locally
+Open `index.html` in a browser, or run `python -m http.server 8000` from the repository directory and visit http://localhost:8000. No backend or credentials are required.
 
-The website includes travel destination sections for:
+## Test
+Run `python -m unittest discover -s tests -v`. The tests validate local navigation, image paths, accessibility basics and the absence of insecure demo forms. The CI workflow runs the same checks on commits and pull requests.
 
-- 🇦🇺 Australia
-- 🗽 New York
-- 🇹🇭 Thailand
+## Limitations
+This is a **static design exercise**, not a booking or payment service. Photos are retained from the original student project; check image usage rights before commercial reuse.
 
-It also includes:
-
-- Navigation menu
-- Travel images
-- Discount buttons
-- Footer section
-
----
-
-## 🌐 Live Website
-
-### [🚀 View Live Website](https://kanizfatemar0xy.github.io/travel-website-project/)
-
----
-
-## 📁 Project Files
-
-```text id="7h2mks"
-index.html
-style.css
-img1.jpg
-img2.jpg
-img3.jpg
-```
-
----
-
-## 👩‍💻 Author
-
-### Kaniz Fatema Roxy
+**Developer:** [Kaniz Fatema Roxy](https://github.com/kanizfatemar0xy)

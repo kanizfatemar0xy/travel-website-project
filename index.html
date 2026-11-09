@@ -1,70 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Travel Website</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive travel destination gallery built with semantic HTML and modern CSS by Kaniz Fatema Roxy.">
+  <title>Discover Places | Travel Gallery by Roxy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="navbar">
-		<div class="logo">
-			<h1>Travel</h1>
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Places</a></li>
-				<li><a href="#">Discounts</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Booking</a></li>
-			</ul>
-		</div>
-		<div class="signup">
-			<a href="#">Sign Up</a>
-		</div>
-	</div>
-	<div class="body">
-		<div class="heading">
-			<h1>Travel With Us</h1>
-			<br>
-			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. </p>
-			<br>
-			<br>
-			<a href="#">Learn More</a>
-		</div>
-		<div class="tours">
-			<div class="places">
-				<h2>Australia</h2>
-				<img src="img1.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
-				<br>
-				<br>
-				<a href="#">Book Now 15% OFF</a>
-			</div>
-			<div class="places">
-				<h2>New York</h2>
-				<img src="img2.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
-				<br>
-				<br>
-				<a href="#">Book Now 20% OFF</a>
-			</div>
-			<div class="places">
-				<h2>Thailand</h2>
-				<img src="img3.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
-				<br>
-				<br>
-				<a href="#">Book Now 25% OFF</a>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<a href="#">Copyright</a>
-		<a href="#">Terms and Conditions</a>
-		<a href="#">Privacy Policy</a>
-		<a href="#">Cookies</a>
-		<a href="#">Complaints</a>
-	</div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Wander<span>Gallery</span></a>
+      <div class="nav-links">
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A frontend design project</p>
+        <h1 id="hero-title">Your next view starts here.</h1>
+        <p>Explore a curated gallery of memorable places. Built with accessible HTML and responsive CSS.</p>
+        <a class="button" href="#destinations">Explore destinations</a>
+      </div>
+      <img class="hero-image" src="img1.jpg" alt="Travel scenery representing the Australia destination" width="640" height="480">
+    </section>
+    <section class="section container" id="destinations" aria-labelledby="destinations-title">
+      <p class="eyebrow">Places to explore</p>
+      <h2 id="destinations-title">Destination gallery</h2>
+      <div class="cards">
+        <article class="card"><img src="img1.jpg" alt="Scenic travel photograph for Australia" loading="lazy" width="600" height="400"><div class="card-body"><h3>Australia</h3><p>Wide-open landscapes and coastal discoveries.</p></div></article>
+        <article class="card"><img src="img2.jpg" alt="Scenic travel photograph for New York" loading="lazy" width="600" height="400"><div class="card-body"><h3>New York</h3><p>Architecture, streets and energy around every corner.</p></div></article>
+        <article class="card"><img src="img3.jpg" alt="Scenic travel photograph for Thailand" loading="lazy" width="600" height="400"><div class="card-body"><h3>Thailand</h3><p>Beautiful places, culture and unforgettable sights.</p></div></article>
+      </div>
+    </section>
+    <section class="section muted" id="about"><div class="container narrow"><p class="eyebrow">About the build</p><h2>Made for exploring and learning</h2><p>This is a static portfolio website, not a travel agency. It demonstrates layout, responsive styling, semantic elements and accessible navigation. It does not take bookings or payments.</p></div></section>
+    <section class="section container narrow" id="contact"><p class="eyebrow">Get in touch</p><h2>See more of my work</h2><p>Explore more projects and code in my GitHub portfolio.</p><a class="button outline" href="https://github.com/kanizfatemar0xy" rel="noopener noreferrer">Visit Roxy's GitHub</a></section>
+  </main>
+  <footer class="footer"><div class="container">&copy; 2026 Kaniz Fatema Roxy · Frontend demonstration</div></footer>
 </body>
 </html>
