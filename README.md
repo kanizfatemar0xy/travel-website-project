@@ -1,5 +1,8 @@
 # WanderGallery — Responsive Travel Website
 
+**[View my GitHub portfolio and other projects](PORTFOLIO.md)**
+
+
 [![Static site checks](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml/badge.svg)](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml)
 
 A **responsive frontend portfolio project** created with HTML5 and CSS3 by **Kaniz Fatema Roxy**.
