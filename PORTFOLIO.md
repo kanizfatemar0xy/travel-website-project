@@ -16,7 +16,7 @@ I build learning-driven software projects across web interfaces, Android apps, d
 
 ## Skills illustrated by these repositories
 
-**Programming:** Python, Java, HTML, CSS, SQL concepts, Git and GitHub.
+**Programming:** Python, Java, HTML, CSS, Git and GitHub.
 
 **Data and machine learning:** data preparation, statistical metrics, scikit-learn, notebooks, time-based evaluation and model validation.
 
