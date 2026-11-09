@@ -14,12 +14,12 @@ A responsive **static frontend showcase** by **Kaniz Fatema Roxy**, demonstratin
 
 ## Run and test
 
-No installation or backend required. Open \`index.html\` in a browser. For a local server:
+No installation or backend required. Open `index.html` in a browser. For a local server:
 
-\`\`\`bash
+```bash
 python -m http.server 8000
 python -m unittest discover -s tests -v
-\`\`\`
+```
 
 The first command serves the site at http://localhost:8000; run the second in another terminal.
 
