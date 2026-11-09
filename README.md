@@ -1,27 +1,30 @@
-# WanderGallery — Responsive Travel Website
+# WanderGallery | Responsive HTML & CSS Travel Website
 
-**[View my GitHub portfolio and other projects](PORTFOLIO.md)**
-
+**[▶ Live demo](https://kanizfatemar0xy.github.io/travel-website-project/)** · **[👩‍💻 Developer portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · **[Project index](PORTFOLIO.md)**
 
 [![Static site checks](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml/badge.svg)](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml)
 
-A **responsive frontend portfolio project** created with HTML5 and CSS3 by **Kaniz Fatema Roxy**.
+A responsive **static frontend showcase** by **Kaniz Fatema Roxy**, demonstrating semantic HTML5, modern CSS layouts, keyboard-friendly navigation, descriptive image text and automated link/asset checks.
 
-**Live (when GitHub Pages is enabled):** https://kanizfatemar0xy.github.io/travel-website-project/
+## What viewers can try
 
-## What the project demonstrates
-- Semantic HTML and accessible navigation, keyboard focus, skip link, descriptive image alternatives
-- Responsive destination cards with mobile breakpoints and reduced-motion support
-- Clear page sections: destinations, about and contact
-- Link/asset validation in Python's standard library and automated GitHub Actions checks
+- Browse three destination cards, resize the site to mobile, and use keyboard navigation.
+- Open the [live **developer portfolio**](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html) to explore related Python, data and Android work.
+- Inspect the [HTML](index.html), [CSS](style.css) and [validation tests](tests/test_site.py) before running locally.
 
-## Run locally
-Open `index.html` in a browser, or run `python -m http.server 8000` from the repository directory and visit http://localhost:8000. No backend or credentials are required.
+## Run and test
 
-## Test
-Run `python -m unittest discover -s tests -v`. The tests validate local navigation, image paths, accessibility basics and the absence of insecure demo forms. The CI workflow runs the same checks on commits and pull requests.
+No installation or backend required. Open \`index.html\` in a browser. For a local server:
 
-## Limitations
-This is a **static design exercise**, not a booking or payment service. Photos are retained from the original student project; check image usage rights before commercial reuse.
+\`\`\`bash
+python -m http.server 8000
+python -m unittest discover -s tests -v
+\`\`\`
 
-**Developer:** [Kaniz Fatema Roxy](https://github.com/kanizfatemar0xy)
+The first command serves the site at http://localhost:8000; run the second in another terminal.
+
+## Scope and limitations
+
+This is **not** a live travel agency, payment or booking system. GitHub Pages hosts the site, while GitHub Actions validates basic accessibility structure, local links and image paths. Those checks do not replace visual/browser accessibility testing. Verify image licensing before commercial reuse.
+
+**Developer:** [Kaniz Fatema Roxy](https://github.com/kanizfatemar0xy) · [LinkedIn](https://www.linkedin.com/in/kaniz-fatema-roxy)

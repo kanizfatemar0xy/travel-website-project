@@ -1,33 +1,41 @@
-# Kaniz Fatema Roxy — Developer Portfolio
+# Kaniz Fatema Roxy | Software & Data Portfolio
 
-**Computer science | Python · Java · data analysis · research · frontend development**
+**Python • Data analysis • Machine learning research • Java/Android • Responsive web development**
 
-I build learning-driven software projects across web interfaces, Android apps, data workflows and exploratory machine learning. I am interested in professional opportunities in **data analysis, software development, research and education**, with longer-term interests in trustworthy AI and AI agents.
+I am a computer science graduate building practical projects across data processing, machine learning, software engineering and frontend development. I am interested in opportunities in **data analysis, junior Python/software engineering, research assistance and education**, with an ongoing interest in AI agents and responsible AI.
 
-## Selected work
+**[View my live portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · [GitHub](https://github.com/kanizfatemar0xy) · [LinkedIn](https://www.linkedin.com/in/kaniz-fatema-roxy)
 
-| Project | Stack | What it demonstrates |
-| --- | --- | --- |
-| [Password Strength Checker](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks) | Python, Jupyter, fuzzy logic | Interactive university notebook plus a safe command-line demonstration with unit tests. Illustrative heuristics, not production security analysis. |
-| [Bitcoin Volatility Research](https://github.com/kanizfatemar0xy/Bitcoin_dissertation) | Python, pandas, scikit-learn, TensorFlow | Time-series preprocessing, financial sentiment features, chronological holdout design, and model comparison. Previous saved models require retraining after leakage fixes. |
-| [Travel With Me](https://github.com/kanizfatemar0xy/travel-website) | HTML, CSS, GitHub Pages | Accessible multipage travel gallery and responsive frontend design. [Live demo](https://kanizfatemar0xy.github.io/travel-website/). |
-| [WanderGallery](https://github.com/kanizfatemar0xy/travel-website-project) | HTML, CSS, GitHub Pages | Responsive destination cards, semantic structure and navigation. [Live demo](https://kanizfatemar0xy.github.io/travel-website-project/). |
-| [Android Student Management System](https://github.com/kanizfatemar0xy/Android-Student-Management-System) | Java, Android XML, Firebase | Authentication, academic resources, PDF sharing and group chat. The repository is **private**; access is available only to authorised reviewers. |
+## Start here — selected projects
 
-## Skills illustrated by these repositories
+| Project | What I built / explored | Try it | Evidence |
+| --- | --- | --- | --- |
+| **[Bitcoin volatility research](https://github.com/kanizfatemar0xy/Bitcoin_dissertation)** | Time-series data preparation, market/news/tweet sentiment features, and evaluation workflows for RF, XGBoost, GB, SVR and LSTM | [Read methodology](https://github.com/kanizfatemar0xy/Bitcoin_dissertation#readme) | [Automated checks](https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml) |
+| **[Fuzzy password-strength demonstration](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks)** | Fuzzy membership concepts and a testable Python CLI; educational rather than security-certified | [Python code](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/blob/main/password_meter.py) | [Unit tests](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml) |
+| **[WanderGallery](https://github.com/kanizfatemar0xy/travel-website-project)** | Responsive single-page gallery with semantic HTML, CSS and accessibility-conscious navigation | [Live website](https://kanizfatemar0xy.github.io/travel-website-project/) | [Site checks](https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml) |
+| **[Travel With Me](https://github.com/kanizfatemar0xy/travel-website)** | Responsive multipage destination site with safe informational forms and local image assets | [Live website](https://kanizfatemar0xy.github.io/travel-website/) | [Site checks](https://github.com/kanizfatemar0xy/travel-website/actions/workflows/site-checks.yml) |
+| **Android Student Management System** | Java, XML, Firebase Authentication, PDF resources and chat | **Private repository** — access by arrangement | Android debug build and local CI tests passed; live Firebase/device tests remain |
 
-**Programming:** Python, Java, HTML, CSS, Git and GitHub.
+## Technical skills demonstrated
 
-**Data and machine learning:** data preparation, statistical metrics, scikit-learn, notebooks, time-based evaluation and model validation.
+- **Python and data:** pandas, NumPy, scikit-learn, notebooks, structured datasets, time-aware train/test splits, evaluation metrics.
+- **Applications:** Java, Android XML layouts, Gradle, Firebase integration and access-rule configuration.
+- **Web:** HTML5, CSS3, responsive design, semantic markup, GitHub Pages.
+- **Engineering workflow:** Git and GitHub, documentation, regression/unit tests, GitHub Actions, explaining limitations.
 
-**Applications:** Android Studio/Gradle, Firebase integration patterns, responsive websites and GitHub Actions.
+## How to review my work
 
-**Workflow:** debugging, source control, documentation, unit checks and careful reporting of untested features.
+1. Open a repository's **README** to understand its goals and limitations.
+2. Use the **live demo** links for the frontend projects; these are static demonstrations, not booking services.
+3. Open the **Actions** links to see automated checks. Passing checks do **not** guarantee all behaviour or external services.
+4. For Android, ask for repository access or a demonstration. It is intentionally private during Firebase and device testing.
 
-## Review or run a project
+## Research and project integrity
 
-Start with each project's README for setup instructions, limitations and test commands. GitHub Actions badges and run links provide evidence for repository checks; they do not imply that every feature or research result has been independently validated.
+The Bitcoin forecasting repository's earlier committed saved models and figures **must be retrained** to use the corrected time-based validation procedure. No new performance claim is made without that rerun. The fuzzy-password project is educational and should not be used to judge real-world password security.
 
-**Links:** [GitHub](https://github.com/kanizfatemar0xy) · [LinkedIn](https://www.linkedin.com/in/kaniz-fatema-roxy)
+## Contact
 
-*This portfolio describes the work that is visible in the listed repositories, without claiming certifications, production deployments or benchmark results that have not been established.*
+**[LinkedIn: Kaniz Fatema Roxy](https://www.linkedin.com/in/kaniz-fatema-roxy)** · **[GitHub: kanizfatemar0xy](https://github.com/kanizfatemar0xy)**
+
+*The profile describes projects with visible code and documented testing, rather than claiming unverified deployments, professional positions or certifications.*
