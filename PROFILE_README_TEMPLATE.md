@@ -1,47 +1,42 @@
 # Hi, I'm Kaniz Fatema Roxy 👋
 
-**Computer Science Graduate | Python & Data Analysis | Machine Learning Research | Web Development**
+**Computer Science graduate | Python • Data Analysis • Machine Learning • Web Development**
 
-I enjoy working with data, exploring machine learning ideas, and building practical applications. My GitHub brings together **Python, research, Android, and frontend projects** with source code, documentation, and automated checks.
+I'm a computer science graduate interested in making data useful, testing machine-learning ideas carefully, and building practical software. My projects cover **data preparation, time-series research, Python, Android/Java and responsive websites**.
 
-🎯 **Career interests:** Data Analyst · Research Assistant · Junior Python/Software Developer · Education & Teaching
+I am exploring opportunities in **data analysis, research assistance, junior software/Python development and education**. I'm also interested in responsible AI and agent-based systems.
 
-🌱 **Currently learning and exploring:** applied data analysis, responsible AI, AI agents, time-series forecasting, and better software engineering practices.
+[![Portfolio](https://img.shields.io/badge/View-Portfolio-0C6F77?style=flat-square)](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaniz-fatema-roxy)
 
-<p>
-  <a href="https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html"><img alt="Explore portfolio" src="https://img.shields.io/badge/Explore-My%20Portfolio-0C6F77?style=flat-square"></a>
-  <a href="https://www.linkedin.com/in/kaniz-fatema-roxy"><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-</p>
+## Selected projects
 
-## Featured projects
-
-| Project | Technologies | Explore |
+| Project | What it demonstrates | Explore |
 | --- | --- | --- |
-| 📊 **[Bitcoin Volatility Forecasting](https://github.com/kanizfatemar0xy/Bitcoin_dissertation)** | Python, pandas, scikit-learn, TensorFlow, time-series data | [Read the research workflow](https://github.com/kanizfatemar0xy/Bitcoin_dissertation#readme) |
-| 🔐 **[Fuzzy Password Strength Checker](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks)** | Python, Jupyter, fuzzy logic, unit testing | [View implementation](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/blob/main/password_meter.py) |
-| 🌐 **[WanderGallery](https://github.com/kanizfatemar0xy/travel-website-project)** | HTML5, CSS3, responsive design | [Live website](https://kanizfatemar0xy.github.io/travel-website-project/) |
-| ✈️ **[Travel With Me](https://github.com/kanizfatemar0xy/travel-website)** | HTML5, CSS3, multipage navigation | [Live website](https://kanizfatemar0xy.github.io/travel-website/) |
+| **[Bitcoin volatility research](https://github.com/kanizfatemar0xy/Bitcoin_dissertation)** | Python data pipelines, market/news/tweet sentiment features, time-aware model evaluation | [Source & methodology](https://github.com/kanizfatemar0xy/Bitcoin_dissertation#readme) |
+| **[Fuzzy password-strength demonstration](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks)** | Interpretable scoring ideas, Python CLI, tests and a Jupyter notebook | [Code & tests](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks#readme) |
+| **[WanderGallery](https://github.com/kanizfatemar0xy/travel-website-project)** | Responsive HTML/CSS, semantic structure, accessibility basics | [Live website](https://kanizfatemar0xy.github.io/travel-website-project/) |
+| **[Travel With Me](https://github.com/kanizfatemar0xy/travel-website)** | Multipage frontend design and responsive navigation | [Live website](https://kanizfatemar0xy.github.io/travel-website/) |
 
-📱 **Also in development:** Android Student Management System (Java, Android XML and Firebase). The repository is private while live Firebase and device testing remain outstanding.
+**Also developing:** An **Android Student Management System** in Java/XML with Firebase authentication, PDF sharing and group chat. The code repository is currently private; its CI debug build passed, while live Firebase/device verification remains outstanding.
 
-## Skills demonstrated in my projects
+## Technical toolkit
 
-- **Programming & data:** Python, pandas, NumPy, scikit-learn, Java, Jupyter notebooks
-- **Web development:** HTML, CSS, mobile-responsive layouts, semantic markup
-- **Machine learning & research:** preprocessing, chronological evaluation, model comparisons and exploratory forecasting
-- **Developer workflow:** Git, GitHub, GitHub Actions, unit testing, documentation, Gradle and Firebase integration
+- **Programming & data:** Python, pandas, NumPy, scikit-learn, Java, Jupyter
+- **Machine learning & research:** dataset preparation, exploratory forecasting, chronological holdout evaluation, model comparisons
+- **Web:** HTML5, CSS3, responsive design, semantic markup, GitHub Pages
+- **Android & backend:** Android Studio, Java/XML, Firebase integration, Gradle
+- **Engineering practices:** Git, GitHub Actions, unit tests, reproducible documentation
 
-## How to explore my work
+## Project quality and reproducibility
 
-Start with my **[visual portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** for a project overview. Each public repository has a README with setup instructions and testing information.
-
-The travel websites are live **frontend demonstrations**. Automated checks show what was tested, but do not prove that an app is production-ready. Previously saved results in my Bitcoin research project require retraining after methodological fixes.
+I document how to run each project and what its tests actually cover. The two travel websites are static frontend demos; the password-strength tool is educational, **not** a security-certified estimator. Earlier saved Bitcoin model results require retraining with improved validation before performance claims can be made.
 
 ## Let's connect
 
-I am interested in opportunities that combine **analytical thinking, technical skills, research, and communication**.
+Interested in discussing data analysis, research, junior development and education opportunities.
 
-**[Portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · **[LinkedIn](https://www.linkedin.com/in/kaniz-fatema-roxy)** · **[GitHub](https://github.com/kanizfatemar0xy)**
+**[Portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · **[LinkedIn](https://www.linkedin.com/in/kaniz-fatema-roxy)** · **[All public repositories](https://github.com/kanizfatemar0xy?tab=repositories)**
 
 ---
-*Thanks for visiting my GitHub. I welcome thoughtful feedback and collaboration on learning and research projects.*
+*Thanks for exploring my work. I welcome constructive feedback and collaboration.*
