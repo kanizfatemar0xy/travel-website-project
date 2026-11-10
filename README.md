@@ -13,7 +13,8 @@ A responsive, accessible-by-design frontend demonstration built by **Kaniz Fatem
 | Travel gallery | Responsive cards, photos and destinations | [Open live website](https://kanizfatemar0xy.github.io/travel-website-project/) |
 | Developer portfolio | Skills, selected projects, live demos and contact links | [View portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html) |
 | Project index | Technical descriptions and links to source, tests and caveats | [Read PORTFOLIO.md](PORTFOLIO.md) |
-| GitHub profile template | An introduction prepared for the GitHub profile README | [View template](PROFILE_README_TEMPLATE.md) |
+| GitHub profile template | Complete, copy-ready GitHub profile introduction | [View template](PROFILE_README_TEMPLATE.md) |
+| Account setup guide | Suggested biography, project descriptions, tags and pinned repositories | [View settings guide](GITHUB_ACCOUNT_SETUP.md) |
 
 ## Technologies
 
