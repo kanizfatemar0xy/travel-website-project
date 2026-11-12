@@ -41,7 +41,7 @@ class PortfolioTests(unittest.TestCase):
         cls.doc.feed(HTML)
 
     def test_featured_numbering_stays_sequential(self):
-        self.assertEqual(re.findall(r'<span class="label">(\\d\\d) ·', HTML),
+        self.assertEqual(re.findall(r'<span class="label">([0-9][0-9]) ·', HTML),
                          ["01", "02", "03", "04", "05", "06"])
 
     def test_public_project_repository_links(self):
