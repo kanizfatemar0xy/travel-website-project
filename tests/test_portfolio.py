@@ -1,21 +1,13 @@
-"""Ensure the professional portfolio stays complete and accurately linked."""
+"""Verify the original clean portfolio layout, six projects, and privacy choices."""
 from html.parser import HTMLParser
 from pathlib import Path
 import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-PORTFOLIO = ROOT / "portfolio.html"
-ACCOUNT = "kanizfatemar0xy"
-PROJECT_NAMES = (
-    "Bitcoin Volatility Forecasting",
-    "Fuzzy Password Strength Checker",
-    "WanderGallery",
-    "Travel With Me",
-    "London Weather",
-    "GridWorld Q-Learning",
-)
-REPOS = (
+HTML = (ROOT / "portfolio.html").read_text(encoding="utf-8")
+OWNER = "kanizfatemar0xy"
+PUBLIC_REPOS = (
     "Bitcoin_dissertation",
     "-Fuzzy-Logic-and-Neural-Networks",
     "travel-website-project",
@@ -24,47 +16,55 @@ REPOS = (
     "GridWorld-Q-Learning",
 )
 
-class ProjectParser(HTMLParser):
+class IndexParser(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.project_ids = []
         self.links = []
-        self.page_ids = set()
+        self.anchors = set()
+        self.images = 0
+        self.projects = 0
     def handle_starttag(self, tag, attrs):
-        a = dict(attrs)
-        if a.get("id"):
-            self.page_ids.add(a["id"])
-        if tag == "article" and a.get("id", "").startswith("p0"):
-            self.project_ids.append(a["id"])
+        attributes = dict(attrs)
+        if "id" in attributes:
+            self.anchors.add(attributes["id"])
         if tag == "a":
-            self.links.append(a.get("href", ""))
+            self.links.append(attributes.get("href", ""))
+        if tag == "img":
+            self.images += 1
+        if tag == "article" and "project" in attributes.get("class", "").split():
+            self.projects += 1
 
-class PortfolioChecks(unittest.TestCase):
+class PortfolioTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.text = PORTFOLIO.read_text(encoding="utf-8")
-        cls.html = ProjectParser()
-        cls.html.feed(cls.text)
+        cls.doc = IndexParser()
+        cls.doc.feed(HTML)
 
-    def test_projects_are_numbered_in_order(self):
-        self.assertEqual(self.html.project_ids, ["p01", "p02", "p03", "p04", "p05", "p06"])
+    def test_featured_numbering_stays_sequential(self):
+        self.assertEqual(re.findall(r'<span class="label">(\\d\\d) ·', HTML),
+                         ["01", "02", "03", "04", "05", "06"])
 
-    def test_dedicated_repository_links_exist(self):
-        for repo in REPOS:
+    def test_public_project_repository_links(self):
+        for repo in PUBLIC_REPOS:
             with self.subTest(repo=repo):
-                self.assertIn(f"https://github.com/{ACCOUNT}/{repo}", self.html.links)
+                self.assertIn(f"https://github.com/{OWNER}/{repo}", self.doc.links)
 
-    def test_all_navigation_anchors_exist(self):
-        for link in self.html.links:
-            if link.startswith("#"):
-                with self.subTest(anchor=link):
-                    self.assertIn(link[1:], self.html.page_ids)
+    def test_no_profile_photograph_or_social_preview_image(self):
+        self.assertEqual(self.doc.images, 0)
+        self.assertNotIn("avatars.githubusercontent.com", HTML)
+        self.assertNotIn('property="og:image"', HTML)
 
-    def test_page_has_contact_and_realistic_scope(self):
-        self.assertIn("linkedin.com/in/kaniz-fatema-roxy", self.text)
-        self.assertIn("real-data model results remain unverified", self.text)
-        self.assertIn("Private repository", self.text)
-        self.assertEqual(len(re.findall(r'class="project-card"', self.text)), 6)
+    def test_navigation_and_contact(self):
+        for url in self.doc.links:
+            if url.startswith("#"):
+                self.assertIn(url[1:], self.doc.anchors)
+        self.assertIn("linkedin.com/in/kaniz-fatema-roxy", HTML)
+        self.assertIn("Private repository", HTML)
+        self.assertEqual(self.doc.projects, 7)  # Six public + private Android project
+
+    def test_project_limitations_are_retained(self):
+        self.assertIn("final forecasting results", HTML)
+        self.assertIn("benchmark passed on the fixed map", HTML)
 
 if __name__ == "__main__":
     unittest.main()

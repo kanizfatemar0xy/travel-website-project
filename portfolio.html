@@ -1,274 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kaniz Fatema Roxy — Computer Science graduate. Explore real Python, data science, machine learning, Android and responsive web projects, with source code, tests and live demos.">
-  <meta name="theme-color" content="#101e33">
-  <meta name="robots" content="index,follow">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kaniz Fatema Roxy's software and data portfolio: Python, data analysis, machine learning research, Android, and web development.">
+  <meta name="theme-color" content="#15293e">
   <link rel="canonical" href="https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html">
+  <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Kaniz Fatema Roxy — Portfolio">
-  <meta property="og:title" content="Kaniz Fatema Roxy | Data, Python & Software Portfolio">
-  <meta property="og:description" content="Six selected projects spanning data science, Python, reinforcement learning, Android and web development. Explore source code and verified checks.">
+  <meta property="og:site_name" content="Kaniz Fatema Roxy Portfolio">
+  <meta property="og:title" content="Kaniz Fatema Roxy | Developer & Data Portfolio">
+  <meta property="og:description" content="Explore Python, data analysis, machine learning research, Android and responsive web projects by Kaniz Fatema Roxy.">
   <meta property="og:url" content="https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html">
   <meta name="twitter:card" content="summary">
-  <title>Kaniz Fatema Roxy | Data Analyst & Python Portfolio</title>
+  <title>Kaniz Fatema Roxy | Developer & Data Portfolio</title>
   <style>
-    :root {
-      color-scheme: light;
-      --navy:#101e33;--navy2:#192d46;--teal:#067b83;--teal-dark:#05616b;--mint:#b3eee1;
-      --text:#182b3e;--muted:#526578;--line:#dce6ed;--soft:#f4f8fb;--paper:#fff;
-      --shadow:0 16px 44px rgba(16,30,51,.055)
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:92px}
-    body{margin:0;background:var(--paper);color:var(--text);font:400 16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-    a{color:var(--teal-dark);text-underline-offset:3px}
-    a:hover{text-decoration-thickness:2px}
-    a:focus-visible{outline:3px solid #f2b84b;outline-offset:4px;border-radius:4px}
-    .wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
-    .skip{position:absolute;left:16px;top:-90px;z-index:20;padding:12px 20px;background:#fff;color:#101e33}
-    .skip:focus{top:10px}
-    .site-header{background:#fff;border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}
-    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy);font-weight:800;letter-spacing:-.02em}
-    .monogram{width:41px;height:41px;border-radius:12px;background:var(--navy);color:#e0fcf4;display:grid;place-items:center;font-size:.86rem;letter-spacing:.05em}
-    .nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:22px}
-    .nav-links a{text-decoration:none;color:#40556b;font-weight:650;font-size:.93rem}
-    .nav-links a:hover{color:var(--teal-dark)}
-    .nav-links .nav-cta{background:var(--navy);color:#fff;padding:9px 16px;border-radius:9px}
-    .nav-links .nav-cta:hover{color:#fff;background:#24455e}
-    .hero{background:radial-gradient(circle at 85% 18%,#194c61 0%,transparent 33%),linear-gradient(125deg,#101e33,#152c46 75%);color:#fff;overflow:hidden}
-    .hero-layout{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:48px;padding:82px 0 88px}
-    .eyebrow{color:#a3e7df;text-transform:uppercase;letter-spacing:.17em;font-weight:800;font-size:.76rem}
-    .hero h1{max-width:740px;margin:16px 0;font-size:clamp(2.7rem,5.6vw,4.6rem);letter-spacing:-.055em;line-height:1.09}
-    .hero h1 span{color:#a9e8df}
-    .hero .lead{max-width:660px;color:#e2edf5;font-size:clamp(1.06rem,1.6vw,1.25rem);line-height:1.55;margin:22px 0 0}
-    .hero .intro{max-width:630px;color:#bfcfdd;margin-top:15px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:10px;font-weight:800;text-decoration:none;font-size:.95rem;border:1px solid transparent;transition:transform .18s ease,background .18s ease}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:#b3eee1;color:#13353e}
-    .btn-primary:hover{background:#d1fff5}
-    .btn-outline{border-color:#8fb1bb;color:#fff;background:transparent}
-    .btn-outline:hover{background:rgba(255,255,255,.09)}
-    .hero-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;color:#b8d4da;font-size:.86rem}
-    .hero-meta span{border-left:2px solid #58bfb0;padding-left:12px}
-    .section{padding:76px 0}
-    .section.soft{background:var(--soft)}
-    .section-top{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}
-    .kicker{display:block;font-size:.75rem;font-weight:850;text-transform:uppercase;letter-spacing:.17em;color:var(--teal-dark);margin-bottom:10px}
-    h2{font-size:clamp(1.8rem,3.8vw,2.6rem);line-height:1.18;letter-spacing:-.04em;margin:0 0 12px}
-    .section-lead{color:var(--muted);max-width:720px;margin:0}
-    .link-text{font-weight:800;text-decoration:none;white-space:nowrap}
-    .link-text:hover{text-decoration:underline}
-    .route-grid,.project-grid,.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .route-card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:24px;box-shadow:var(--shadow)}
-    .route-label{display:block;font-weight:850;color:var(--teal-dark);font-size:.75rem;text-transform:uppercase;letter-spacing:.11em}
-    .route-card h3{font-size:1.18rem;line-height:1.3;margin:10px 0}
-    .route-card p{color:var(--muted);margin:0 0 12px;font-size:.91rem}
-    .route-card a{font-weight:750;font-size:.9rem}
-    .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-    .project-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;padding:28px;background:#fff;box-shadow:var(--shadow);scroll-margin-top:110px;transition:border-color .2s,transform .2s}
-    .project-card:hover{border-color:#8fc7c5;transform:translateY(-2px)}
-    .card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .number{font-size:1rem;font-weight:850;color:var(--teal-dark);letter-spacing:.1em}
-    .category{border-radius:30px;background:#e6f4f2;color:#075960;padding:5px 11px;font-size:.73rem;font-weight:800}
-    .project-card h3{font-size:1.33rem;line-height:1.3;letter-spacing:-.025em;margin:17px 0 8px}
-    .project-card h3 a{color:var(--navy);text-decoration:none}
-    .project-card h3 a:hover{text-decoration:underline;text-decoration-color:var(--teal)}
-    .project-card p{margin:0 0 15px;color:var(--muted);font-size:.96rem}
-    .tech{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:4px 0 16px;padding:0}
-    .tech li{background:#f2f6f9;border:1px solid #e3ebef;border-radius:7px;padding:4px 8px;color:#355066;font-size:.77rem;font-weight:650}
-    .card-links{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
-    .card-links a{font-size:.89rem;font-weight:800;text-decoration:none}
-    .card-links a:hover{text-decoration:underline}
-    .card-links .main-link{color:var(--teal-dark)}
-    .project-card .note{font-size:.81rem;color:#607084;border-top:1px solid #e6edf1;padding-top:12px;margin:15px 0 0}
-    .private-card{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center;margin-top:22px;padding:24px 26px;background:#f8fbfc;border:1px dashed #a5bfc5;border-radius:18px}
-    .private-card h3{margin:0 0 5px;font-size:1.15rem}
-    .private-card p{margin:0;color:var(--muted);max-width:740px;font-size:.92rem}
-    .private-badge{border-radius:8px;padding:7px 11px;background:#e6edf2;color:#345065;font-weight:800;font-size:.78rem}
-    .skills-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .skill-block{border-top:3px solid #06818a;padding:18px 0 2px}
-    .skill-block h3{margin:0 0 8px;font-size:1.07rem}
-    .skill-block p{color:var(--muted);margin:0;font-size:.94rem}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px}
-    .about-grid p{color:var(--muted);margin-top:0}
-    .about-grid ul{padding-left:20px;color:var(--muted);margin:0}
-    .about-grid li+li{margin-top:9px}
-    .contact{background:var(--navy);color:#fff;padding:66px 0}
-    .contact-layout{display:flex;justify-content:space-between;align-items:center;gap:30px}
-    .contact h2{margin-bottom:12px}
-    .contact p{color:#cadce8;max-width:580px;margin:0}
-    .contact .eyebrow{margin-bottom:10px}
-    .contact-actions{display:flex;flex-wrap:wrap;gap:12px}
-    footer{padding:23px 0;background:#0c192c;color:#c1ccd9;font-size:.84rem}
-    footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-    footer a{color:#d0eee6}
-    @media(max-width:900px){.nav-links{gap:14px}.hero-layout{gap:24px}.route-grid{grid-template-columns:1fr 1fr}.skills-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:720px){.wrap{width:min(100% - 30px,1120px)}.nav{padding:12px 0;min-height:70px;align-items:flex-start;flex-direction:column}.nav-links{width:100%;gap:14px;padding-bottom:4px}.nav-links a{font-size:.87rem}.nav-links .nav-cta{padding:7px 11px}.hero-layout{grid-template-columns:1fr;padding:55px 0 61px}.section{padding:52px 0}.section-top{display:block}.route-grid,.project-grid,.skills-grid,.about-grid{grid-template-columns:1fr}.project-card{padding:23px}.contact-layout{display:block}.contact-actions{margin-top:22px}.section-top .link-text{display:inline-block;margin-top:12px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.project-card{transition:none}.btn:hover,.project-card:hover{transform:none}}
+  :root{color-scheme:light;--ink:#162739;--muted:#516579;--border:#dce7ef;--accent:#0c6f77;--bg:#f5f9fc}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65}a{color:#075f73}a:focus-visible{outline:3px solid #e9ae4e;outline-offset:3px}
+  .container{width:min(1100px,92%);margin:auto}.skip{position:absolute;top:-5rem;left:1rem;background:#fff;padding:1rem;z-index:9}.skip:focus{top:1rem}
+  header{background:#fff;border-bottom:1px solid var(--border)}nav{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 0}nav a{text-decoration:none;font-weight:650}.links{display:flex;flex-wrap:wrap;gap:1rem}.brand{font-size:1.05rem;color:var(--ink);font-weight:800}
+  .hero{background:linear-gradient(140deg,#15293e,#0b5865);color:#fff;padding:4.2rem 0 4rem}.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;font-weight:800;color:#9ce2e0}.hero h1{font-size:clamp(2.4rem,5.5vw,4.2rem);max-width:760px;letter-spacing:-.04em;line-height:1.1;margin:.5rem 0 1rem}.hero p{max-width:730px;color:#dbedf2;font-size:1.07rem}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}.button{display:inline-block;background:#fff;color:#174154;border-radius:999px;padding:.72rem 1.25rem;font-weight:750;text-decoration:none;border:2px solid #fff}.button.secondary{background:transparent;color:#fff}.button:hover{filter:brightness(.94)}
+  main section{padding:3.2rem 0}.section-title{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;margin:.2rem 0 .75rem}.intro{max-width:760px;color:var(--muted);margin-top:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin-top:1.3rem}
+  .project{background:#fff;border:1px solid var(--border);border-radius:18px;padding:1.5rem;box-shadow:0 10px 28px rgba(23,40,60,.035)}.project h3{font-size:1.25rem;margin:.35rem 0}.project p{color:var(--muted);margin:.5rem 0 1rem}.label{font-weight:800;font-size:.77rem;color:#0a6573;text-transform:uppercase;letter-spacing:.08em}.project ul{padding-left:1.25rem;color:var(--muted)}.project .actions{margin-top:1rem;gap:1rem}.project .actions a{font-weight:700}.private{border-style:dashed;background:#f8fafc}
+  .light{background:#eaf3f5}.skills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem}.skills span{border:1px solid #cbdde7;background:#fff;padding:.43rem .84rem;border-radius:999px;font-size:.92rem}.fine{color:var(--muted);font-size:.92rem;max-width:760px}
+  footer{background:#172a3e;color:#dfeaf2;padding:2rem 0}footer a{color:#c4f2f0}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding:3rem 0}.project{padding:1.2rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
-<body id="top">
+<body>
   <a class="skip" href="#main">Skip to main content</a>
-  <header class="site-header">
-    <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#top"><span class="monogram" aria-hidden="true">KFR</span><span>Kaniz Fatema Roxy</span></a>
-      <div class="nav-links">
-        <a href="#work">Projects</a>
-        <a href="#expertise">Skills</a>
-        <a href="#about">Approach</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="https://github.com/kanizfatemar0xy">GitHub ↗</a>
-      </div>
-    </nav>
-  </header>
+  <header><nav class="container" aria-label="Portfolio navigation"><a class="brand" href="portfolio.html">Kaniz Fatema Roxy</a><div class="links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="index.html">Travel gallery</a></div></nav></header>
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-layout">
-        <div>
-          <span class="eyebrow">Data · Python · AI &amp; Software</span>
-          <h1 id="hero-title">Hello, I'm <span>Kaniz Fatema Roxy.</span></h1>
-          <p class="lead">Computer Science graduate building practical data projects and thoughtfully engineered software.</p>
-          <p class="intro">My portfolio brings together data analysis, machine learning experiments, reinforcement learning, accessible websites and Android development. I'm interested in graduate and junior opportunities in analytics, research and software.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">Explore my projects ↗</a>
-            <a class="btn btn-outline" href="https://www.linkedin.com/in/kaniz-fatema-roxy">Connect on LinkedIn ↗</a>
-          </div>
-          <div class="hero-meta" aria-label="Portfolio highlights">
-            <span>06 featured public projects</span>
-            <span>02 live web demos</span>
-            <span>Code, methods &amp; tests</span>
-          </div>
-        </div>
+    <div class="hero"><div class="container"><p class="kicker">Software · Data · Research</p><h1>Hi, I'm Kaniz Fatema Roxy.</h1><p>I build thoughtful projects in Python, machine learning research, Android development and the web. I am exploring opportunities in data analysis, junior software engineering, research and education.</p><div class="actions"><a class="button" href="#projects">Explore my projects</a><a class="button secondary" href="https://www.linkedin.com/in/kaniz-fatema-roxy">Connect on LinkedIn</a></div></div></div>
+    <section id="projects" class="container" aria-labelledby="projects-title"><p class="label">Selected work</p><h2 class="section-title" id="projects-title">Projects you can explore</h2><p class="intro">Each project links to its source, documentation and available demo or automated checks. Research limitations and testing status are noted rather than hidden.</p>
+      <div class="grid">
+        <article class="project"><span class="label">01 · Python · Data analysis · Research</span><h3>Bitcoin volatility forecasting</h3><p>Data preparation, historical price signals and sentiment features, with chronological model evaluation and a reproducibility-focused training workflow.</p><div class="actions"><a href="https://github.com/kanizfatemar0xy/Bitcoin_dissertation">View code and methods</a><a href="https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml">See tests</a></div><p class="fine">Earlier saved models require retraining after evaluation fixes; no revised performance scores are claimed.</p></article>
+        <article class="project"><span class="label">02 · Python · Fuzzy logic · Tests</span><h3>Password strength demonstration</h3><p>An educational fuzzy-logic notebook paired with a testable Python command-line implementation exploring membership-based strength categories.</p><div class="actions"><a href="https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks">View code</a><a href="https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml">See tests</a></div><p class="fine">A teaching example, not a production password security tool.</p></article>
+        <article class="project"><span class="label">03 · HTML · CSS · Accessibility</span><h3>WanderGallery</h3><p>Responsive destination cards with accessible structure, sensible mobile layouts, local imagery and automated static-site checks.</p><div class="actions"><a href="index.html">Live demo</a><a href="https://github.com/kanizfatemar0xy/travel-website-project">View source</a></div></article>
+        <article class="project"><span class="label">04 · HTML · CSS · Multipage web</span><h3>Travel With Me</h3><p>A multipage travel-gallery frontend with responsive navigation and informative pages that do not request real passwords or payments.</p><div class="actions"><a href="https://kanizfatemar0xy.github.io/travel-website/">Live demo</a><a href="https://github.com/kanizfatemar0xy/travel-website">View source</a></div></article>
+        <article class="project"><span class="label">05 · Python · Data science · Time series</span><h3>London Weather Data Science (1979–2023)</h3><p>Quality-aware exploration of Heathrow weather observations with correctly converted units, visualisations, and chronological next-day forecasting evaluation.</p><div class="actions"><a href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science">Explore project</a><a href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science/blob/main/DataScienceReport_Fixed.ipynb">Open notebook</a><a href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science/actions/workflows/validation.yml">See tests</a></div><p class="fine">Automated synthetic-data checks passed; final forecasting results on the complete real dataset remain unverified.</p></article>
+        <article class="project"><span class="label">06 · Python · Reinforcement learning</span><h3>GridWorld Q-Learning Agent</h3><p>A reproducible Q-learning agent for a deterministic 4×4 environment, with seed-controlled training, policy evaluation, shortest-path verification, and automated tests.</p><div class="actions"><a href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning">Explore project</a><a href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning/blob/main/rl_qlearning.py">View Python source</a><a href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning/actions/workflows/validation.yml">See tests</a></div><p class="fine">17 automated tests and a 30-seed benchmark passed on the fixed map; these results do not establish performance in new environments.</p></article>
+        <article class="project private"><span class="label">Java · Android · Firebase</span><h3>Android Student Management System</h3><p>Authentication, PDF resource sharing and group chat built with Android Java/XML and Firebase integration. Automated Android build and local tests passed.</p><p><strong>Private repository:</strong> an access invitation or code walkthrough can be arranged. Live Firebase and physical device testing remain outstanding.</p></article>
       </div>
     </section>
-
-    <section class="section soft" id="paths" aria-labelledby="paths-title">
-      <div class="wrap">
-        <span class="kicker">A quick guide</span>
-        <h2 id="paths-title">Start with what matters to your role.</h2>
-        <p class="section-lead">Whether you're hiring for analytics, Python or frontend work, here's a quick route through the projects.</p>
-        <div class="route-grid" style="margin-top:26px">
-          <article class="route-card">
-            <span class="route-label">Data &amp; research</span>
-            <h3>Understand the data, then the model.</h3>
-            <p>Exploratory analysis, data-quality decisions and chronological model validation.</p>
-            <a href="#p05">Start with London Weather →</a>
-          </article>
-          <article class="route-card">
-            <span class="route-label">Python &amp; AI</span>
-            <h3>Reproducible learning experiments.</h3>
-            <p>Agent training, unit tests, and independent policy evaluation.</p>
-            <a href="#p06">Start with Q-Learning →</a>
-          </article>
-          <article class="route-card">
-            <span class="route-label">Frontend development</span>
-            <h3>Try the working websites.</h3>
-            <p>Responsive layouts, navigable pages and static-site checks.</p>
-            <a href="#p03">Start with WanderGallery →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="wrap">
-        <div class="section-top">
-          <div><span class="kicker">Selected work</span><h2 id="work-title">Featured projects</h2><p class="section-lead">Six public projects. Each has source code, a description, and links to live demos, notebooks or automated checks where available.</p></div>
-          <a class="link-text" href="https://github.com/kanizfatemar0xy?tab=repositories">All repositories ↗</a>
-        </div>
-        <div class="project-grid">
-          <!-- Keep existing numbers in order. Future projects should be added after 06 as 07, 08, etc. -->
-          <article class="project-card" id="p01">
-            <div class="card-top"><span class="number">01 / 06</span><span class="category">Data · Research</span></div>
-            <h3><a href="https://github.com/kanizfatemar0xy/Bitcoin_dissertation">Bitcoin Volatility Forecasting</a></h3>
-            <p>Research workflow combining market prices with daily news and social-media sentiment. Includes data preparation, model comparisons, and time-aware evaluation.</p>
-            <ul class="tech" aria-label="Technologies"><li>Python</li><li>pandas</li><li>XGBoost</li><li>TensorFlow</li></ul>
-            <div class="card-links"><a class="main-link" href="https://github.com/kanizfatemar0xy/Bitcoin_dissertation">Repository ↗</a><a href="https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml">Validation checks ↗</a></div>
-            <p class="note">Saved model artifacts require retraining and renewed evaluation after validation improvements.</p>
-          </article>
-
-          <article class="project-card" id="p02">
-            <div class="card-top"><span class="number">02 / 06</span><span class="category">Python · Fuzzy Logic</span></div>
-            <h3><a href="https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks">Fuzzy Password Strength Checker</a></h3>
-            <p>An educational fuzzy-logic exercise with a notebook and a testable Python command-line implementation, covering feature engineering and membership-based scoring.</p>
-            <ul class="tech" aria-label="Technologies"><li>Python</li><li>Jupyter</li><li>Fuzzy logic</li><li>Unit tests</li></ul>
-            <div class="card-links"><a class="main-link" href="https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks">Repository ↗</a><a href="https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml">Tests ↗</a></div>
-            <p class="note">Educational demonstration; not a certified password-security estimator.</p>
-          </article>
-
-          <article class="project-card" id="p03">
-            <div class="card-top"><span class="number">03 / 06</span><span class="category">Frontend · Live Demo</span></div>
-            <h3><a href="https://github.com/kanizfatemar0xy/travel-website-project">WanderGallery &amp; Developer Portfolio</a></h3>
-            <p>Responsive destination gallery featuring mobile layouts, accessible navigation, and the developer portfolio you're viewing now.</p>
-            <ul class="tech" aria-label="Technologies"><li>HTML5</li><li>CSS3</li><li>GitHub Pages</li></ul>
-            <div class="card-links"><a class="main-link" href="index.html">Live demo ↗</a><a href="https://github.com/kanizfatemar0xy/travel-website-project">Source code ↗</a><a href="https://github.com/kanizfatemar0xy/travel-website-project/actions/workflows/site-checks.yml">Checks ↗</a></div>
-          </article>
-
-          <article class="project-card" id="p04">
-            <div class="card-top"><span class="number">04 / 06</span><span class="category">Frontend · Live Demo</span></div>
-            <h3><a href="https://github.com/kanizfatemar0xy/travel-website">Travel With Me</a></h3>
-            <p>A multipage travel-gallery website with destination content, responsive navigation and clearly labelled informational demonstration pages.</p>
-            <ul class="tech" aria-label="Technologies"><li>HTML5</li><li>CSS3</li><li>Multipage design</li></ul>
-            <div class="card-links"><a class="main-link" href="https://kanizfatemar0xy.github.io/travel-website/">Live demo ↗</a><a href="https://github.com/kanizfatemar0xy/travel-website">Source code ↗</a></div>
-            <p class="note">Booking and sign-up pages are demos, not working booking or payment services.</p>
-          </article>
-
-          <article class="project-card" id="p05">
-            <div class="card-top"><span class="number">05 / 06</span><span class="category">Data Science · Forecasting</span></div>
-            <h3><a href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science">London Weather Data Science (1979–2023)</a></h3>
-            <p>Analysis of Heathrow daily weather data, with quality-flag handling, correct unit conversion, clear visualisations and chronological next-day forecasting evaluation.</p>
-            <ul class="tech" aria-label="Technologies"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>Jupyter</li></ul>
-            <div class="card-links"><a class="main-link" href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science">Repository ↗</a><a href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science/blob/main/DataScienceReport_Fixed.ipynb">Notebook ↗</a><a href="https://github.com/kanizfatemar0xy/London-Weather-Data-Science/actions/workflows/validation.yml">CI tests ↗</a></div>
-            <p class="note">Synthetic-data and integration checks passed; complete real-data model results remain unverified.</p>
-          </article>
-
-          <article class="project-card" id="p06">
-            <div class="card-top"><span class="number">06 / 06</span><span class="category">AI · Reinforcement Learning</span></div>
-            <h3><a href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning">GridWorld Q-Learning Agent</a></h3>
-            <p>A reproducible Q-learning agent on a fixed deterministic 4×4 grid, with seeded exploration, policy evaluation, and shortest-path checks.</p>
-            <ul class="tech" aria-label="Technologies"><li>Python</li><li>NumPy</li><li>Q-learning</li><li>Unit tests</li></ul>
-            <div class="card-links"><a class="main-link" href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning">Repository ↗</a><a href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning/blob/main/rl_qlearning.py">Source ↗</a><a href="https://github.com/kanizfatemar0xy/GridWorld-Q-Learning/actions/workflows/validation.yml">CI tests ↗</a></div>
-            <p class="note">17 automated tests and a 30-seed benchmark passed on this fixed map; this does not establish generalisation.</p>
-          </article>
-        </div>
-        <aside class="private-card" aria-label="Additional private project">
-          <div><h3>Additional work · Android Student Management System</h3><p>Java/XML and Firebase application exploring authentication, PDF sharing and group chat. Local JVM checks and a CI debug build passed; real Firebase and device checks remain outstanding.</p></div>
-          <span class="private-badge">Private repository</span>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section soft" id="expertise" aria-labelledby="expertise-title">
-      <div class="wrap">
-        <span class="kicker">Toolkit</span><h2 id="expertise-title">Skills &amp; technologies</h2>
-        <p class="section-lead">Skills demonstrated across my coursework, research and independent programming projects.</p>
-        <div class="skills-grid" style="margin-top:28px">
-          <div class="skill-block"><h3>Data &amp; machine learning</h3><p>Python, pandas, NumPy, scikit-learn, Matplotlib, Jupyter, time-series analysis and model evaluation.</p></div>
-          <div class="skill-block"><h3>Development &amp; applications</h3><p>Java, Android Studio, Firebase integration, Gradle, HTML5, CSS3, responsive layouts and GitHub Pages.</p></div>
-          <div class="skill-block"><h3>Engineering practices</h3><p>Git, GitHub Actions, unit testing, debugging, reproducible experiments and clear documentation.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid">
-        <div><span class="kicker">How I work</span><h2 id="about-title">Curiosity backed by evidence.</h2><p>I value clean code, explicit assumptions and projects people can actually review. My goal is to make each repository useful to another developer—not just a screenshot of a result.</p><p>I'm particularly interested in data analysis, Python software, responsible AI, research assistance and education-related technology roles.</p></div>
-        <div><span class="kicker">Transparency</span><h2>What the checks mean</h2><ul><li>Automated tests check specific behaviours; they are not a claim that every system is production-ready.</li><li>London Weather still needs complete real-dataset model verification.</li><li>GridWorld benchmarks are limited to a fixed deterministic environment.</li><li>The private Android application still needs real Firebase and device testing.</li></ul></div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap contact-layout">
-        <div><span class="eyebrow">Get in touch</span><h2 id="contact-title">Let's connect.</h2><p>Interested in opportunities in data analysis, research, entry-level software development and education. You can reach me through LinkedIn or explore the code on GitHub.</p></div>
-        <div class="contact-actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/kaniz-fatema-roxy">LinkedIn ↗</a><a class="btn btn-outline" href="https://github.com/kanizfatemar0xy">GitHub ↗</a></div>
-      </div>
-    </section>
+    <section class="light" id="skills" aria-labelledby="skills-title"><div class="container"><p class="label">Tools & experience</p><h2 class="section-title" id="skills-title">Technologies demonstrated</h2><div class="skills"><span>Python</span><span>pandas</span><span>NumPy</span><span>scikit-learn</span><span>Jupyter</span><span>Java</span><span>Android XML</span><span>Firebase</span><span>HTML</span><span>CSS</span><span>Git & GitHub</span><span>GitHub Actions</span></div><p class="fine">Skills are demonstrated across learning and research projects; this page does not claim commercial deployments or professional certifications.</p></div></section>
+    <section id="contact" class="container" aria-labelledby="contact-title"><p class="label">Connect</p><h2 class="section-title" id="contact-title">Let's discuss my work</h2><p class="intro">Interested in data analysis, junior software development, research assistance and education-related roles.</p><p><a href="https://www.linkedin.com/in/kaniz-fatema-roxy">LinkedIn profile</a> · <a href="https://github.com/kanizfatemar0xy">GitHub repositories</a> · <a href="PORTFOLIO.md">Portfolio documentation</a></p></section>
   </main>
-  <footer><div class="wrap"><span>© 2026 Kaniz Fatema Roxy · Portfolio &amp; selected projects</span><span><a href="PORTFOLIO.md">Project documentation</a> · <a href="#top">Back to top ↑</a></span></div></footer>
+  <footer><div class="container">© 2026 Kaniz Fatema Roxy · Projects are documented with their test status and limitations.</div></footer>
 </body>
 </html>
